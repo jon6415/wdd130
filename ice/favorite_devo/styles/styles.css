@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f5fdc6, #a89f68);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  min-height: 400px;
+  border: 1px solid black;
+  border-radius: 1em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.table-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;  width: 100%;
+  background-color: #fdfdfd;
+}
+
+th {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  background-color: #7353ba;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 12px;
+  text-align: center;
+}
+
+tr, td {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f3f9;
+}
+
+td {
+  border-top: 1px solid #ddd;
+  padding: 10px 12px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+    
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+label, input {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  align-self: flex-start;
+  color: #333;
+}
+
+form input[type="text"],
+form textarea {
+  width: 260px;
+  height: 36px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95em;
+  resize: none;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 36px; /* exact match with inputs */
+}
+
+button {
+  background-color: #7353ba;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #59379a;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #apostles-box{
+            background-image: url(images/christus.jpeg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: cover;
+            border: 5px solid black;
+            border-radius: 30px;
+            max-width: 80%;
+            text-align: center;
+            margin: 30px auto;
+
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e8eced;
+            color: white
+        }
+        #box {
+            max-width: 1400px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: end;
+            gap: 1em;
+        }
+
+        img.medium-img {
+            border-radius: 50%;
+            width: 175px;
+            height: 175px;
+            object-fit: cover;
+            object-position: 50% 0;
+            border: 5px solid white;
+        }
+
+        #box h1 {
+            flex: 1 1 100%;
+        }
+
+
+        img.small-img {
+            border: 5px solid white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: 50% 0;
+        }
+        img#middle-image {
+            width: 250px;
+            height: 250px;
+            border: 5px solid white;
+            object-fit: cover;
+            object-position: 50% 0;
+            border-radius: 50%;
+        }
+        #quroum{
+            max-width: 80%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 0 auto;
+            justify-items: center;
+            row-gap: .8em;
+            padding-bottom: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="apostles-box">
+        <div id="box">
+            <h1>First Presidency</h1>
+            <img class="medium-img" src="images/eyring.webp" alt="eyring">
+            <img id="middle-image" src="images/oaks.webp" alt="oaks">
+            <img class="medium-img" src="images/christofferson.webp" alt="christofferson">
+        </div>
+        <h1>Quorum of the Twelve Apostles</h1>
+        <div id="quroum">
+            <img class="small-img" src="images/holland.webp" alt="">
+            <img class="small-img" src="images/uchtdorf.webp" alt="">
+            <img class="small-img" src="images/andersen.webp" alt="">
+            <img class="small-img" src="images/bednar.webp" alt="">
+            <img class="small-img" src="images/cook.webp" alt="">
+            <img class="small-img" src="images/gong.webp" alt="">
+            <img class="small-img" src="images/kearon.webp" alt="">
+            <img class="small-img" src="images/rasband.webp" alt="">
+            <img class="small-img" src="images/renlund.webp" alt="">
+            <img class="small-img" src="images/soares.webp" alt="">
+            <img class="small-img" src="https://placehold.co/600x400" alt="img">
+            <img class="small-img" src="https://placehold.co/600x400" alt="img">
+        </div>
+
+    </div>
+</body>
+
+</html>

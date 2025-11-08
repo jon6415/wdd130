@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICE Challenges</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;600;700&display=swap');
+    .projects h2 {
+      font-size: 2rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      height: 160px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+      justify-items: center;
+    }
+
+    .card-grid a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-grid a h3 {
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="/images/logo.png" alt="Logo">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="/wwr/index.html">White Water Rafting</a></li>
+            <li><a href="/ice/ice.html">ICE Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="/about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="card-grid">
+        <a href="/ice/apostles/apostles.html" class="card">
+          <img src="/ice/images/apostles.jpg" alt="Apostle Cards thumbnail">
+          <h3>Apostle Cards</h3>
+        </a>
+
+        <a href="/ice/favorite_devo/favdevo.html" class="card">
+          <img src="/ice/images/dvos.jpg" alt="Devotionals thumbnail">
+          <h3>My Favorite Devotionals</h3>
+        </a>
+
+        <a href="/ice/grid_flags/flags.html" class="card">
+          <img src="/ice/images/flags.jpg" alt="Country Flags thumbnail">
+          <h3>Country Flags</h3>
+        </a>
+
+        <a href="/ice/gallery/gallery.html" class="card">
+          <img src="/ice/images/gallery.jpg" alt="Christ Gallery thumbnail">
+          <h3>Christ Gallery</h3>
+        </a>
+
+        <a href="/ice/halloween/index.html" class="card">
+          <img src="/ice/images/halloween.jpg" alt="Halloween thumbnail">
+          <h3>Halloween</h3>
+        </a>
+
+        <a href="/ice/positioning/positioning.html" class="card">
+          <img src="/ice/images/positioning.jpg" alt="Color Positioning thumbnail">
+          <h3>Color Positioning</h3>
+        </a>
+
+        <a href="/ice/prophet_cards/nelson.html" class="card">
+          <img src="/ice/images/prophet.jpg" alt="Prophet Card thumbnail">
+          <h3>Prophet Card</h3>
+        </a>
+
+        <a href="/ice/signup/signup.html" class="card">
+          <img src="/ice/images/signup.jpg" alt="Signup Form thumbnail">
+          <h3>Signup Form</h3>
+        </a>
+      </div>
+    </section>
+
+  </main>
+    
+  <footer>
+    <p>2025 Jonathan Swenson</p>
+  </footer>
+</body>
+</html>
